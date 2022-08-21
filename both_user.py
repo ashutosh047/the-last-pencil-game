@@ -77,7 +77,7 @@ while(n>0):
     if(n==0):
         break
     else:
-        if(x=='John'):
+        if(turn==0):
             n=john_move(n)
             if(n==0):
                 turn=(turn+1)%2
@@ -86,7 +86,7 @@ while(n>0):
             else:
                 turn=(turn+1)%2
                 print(l[turn]+"'s turn!")
-        elif(x=='Jack'):
+        elif(turn==1):
             n=jack_move(n)
             if(n==0):
                 turn=(turn+1)%2
